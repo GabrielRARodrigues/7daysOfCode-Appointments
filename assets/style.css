@@ -1,0 +1,36 @@
+:root {
+  font-size: 62.5%;
+  --background-color: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
+  --text-primary-color: #464646;
+  --text-secundary-color: #a3a3a3;
+  --button-background-primary-color: #4894ff;
+  --button-background-secundary-color: #ffb050;
+  --border-color: #ececec;
+  --main-primary-color: #fff;
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font);
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+}
+
+.header {
+  padding: 0.6rem 1.6rem;
+}
+
+.header__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__status-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
