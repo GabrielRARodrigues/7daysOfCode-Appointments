@@ -3,9 +3,10 @@
   --background-color: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
   --text-primary-color: #464646;
   --text-secundary-color: #a3a3a3;
+  --border-color: rgba(70, 70, 70, 0.1);
   --button-background-primary-color: #4894ff;
   --button-background-secundary-color: #ffb050;
-  --border-color: #ececec;
+  --border-button-color: #ececec;
   --main-primary-color: #fff;
   --font: 'Montserrat', sans-serif;
 }
@@ -17,6 +18,7 @@ body {
   font-family: var(--font);
   background-image: var(--background-color);
   color: var(--text-primary-color);
+  line-height: 160%;
 }
 
 .header {
@@ -52,12 +54,42 @@ body {
 
 .header__content-title {
   font-size: 2.2rem;
-  line-height: 160%;
   font-weight: 700;
 }
 
 .header__content-text {
-  line-height: 160%;
   font-size: 1.4rem;
   color: var(--text-secundary-color);
+}
+
+.main {
+  padding: 1.6rem;
+}
+
+.appointments__day {
+  font-weight: 700;
+}
+
+.appointments__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.appointments__card {
+  padding-block: 1.6rem;
+  background-color: white;
+}
+
+.appointments__card-header {
+  padding-inline: 1.6rem;
+  border-bottom: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1.6rem;
+}
+.appointments__card-person {
+  width: 3.2rem;
+  border-radius: 50%;
+  grid-area: 1 / 1 / 3 / 2;
 }
