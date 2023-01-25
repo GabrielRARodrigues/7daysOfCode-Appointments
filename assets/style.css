@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-size: 62.5%;
   --background-color: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
@@ -189,10 +193,21 @@ body {
 
 .footer__list {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3.6rem;
 }
 
-.footer__item {
+.footer__item-link {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.footer__item-link--ativo {
+  color: var(--button-background-primary-color);
 }
