@@ -17,7 +17,6 @@
 
 body {
   font-size: 1.6rem;
-  width: 100vw;
   height: 100vh;
   font-family: var(--font);
   background-image: var(--background-color);
@@ -70,6 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  padding-bottom: 7rem;
 }
 
 .appointments__day {
@@ -215,4 +215,18 @@ body {
 
 .footer__item-link--ativo {
   color: var(--button-background-primary-color);
+}
+
+.footer__item-link--ativo svg path {
+  fill: var(--button-background-primary-color);
+}
+
+.button-plus {
+  background-color: var(--button-background-primary-color);
+  padding: 2rem;
+  border: none;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 8.6rem;
+  right: 1.6rem;
 }
