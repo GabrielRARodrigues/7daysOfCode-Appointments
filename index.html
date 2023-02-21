@@ -554,6 +554,91 @@
             </div>
           </div>
         </section>
+        <form class="appointment-form">
+          <legend class="appointment-form__title">
+            Adicione uma nova consulta
+          </legend>
+
+          <div class="appointment-form__input-container">
+            <fieldset class="input-wrapper">
+              <label class="appointment-form__label" for="name"
+                >Nome do paciente</label
+              >
+              <input
+                placeholder="Digite o nome do paciente"
+                class="appointment-form__input appointment-form__input--name"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </fieldset>
+            <fieldset class="input-wrapper input-wrapper--select">
+              <label class="appointment-form__label" for="appointmentType"
+                >Tipo de consulta</label
+              >
+              <select
+                class="appointment-form__input appointment-form__select"
+                name="appointmentType"
+                id="appointmentType"
+              >
+                <option selected disabled>
+                  Selecione qual o tipo de consulta
+                </option>
+                <option value="remote">Consulta Remota</option>
+                <option value="local">Consuta local</option>
+              </select>
+            </fieldset>
+            <fieldset class="input-wrapper">
+              <label class="appointment-form__label" for="appointmentDate"
+                >Dia da consulta</label
+              >
+              <input
+                class="appointment-form__input appointment-form__input--date"
+                type="date"
+                id="appointmentDate"
+                name="appointmentDate"
+              />
+            </fieldset>
+            <div class="appointment-form__time-inputs">
+              <fieldset class="input-wrapper input-wrapper--time">
+                <label
+                  class="appointment-form__label"
+                  for="appointmentStartTime"
+                  >Horário de inicio da consulta</label
+                >
+                <input
+                  class="appointment-form__input appointment-form__input--time"
+                  type="time"
+                  name="appointmentStartTime"
+                  id="appointmentStartTime"
+                />
+              </fieldset>
+              <fieldset class="input-wrapper input-wrapper--time">
+                <label class="appointment-form__label" for="appointmentEndTime"
+                  >Horário de término da consulta</label
+                >
+                <input
+                  class="appointment-form__input appointment-form__input--time"
+                  type="time"
+                  id="appointmentEndTime"
+                  name="appointmentEndTime"
+                />
+              </fieldset>
+            </div>
+            <fieldset class="input-wrapper">
+              <label for="appointmentObservation"
+                >Alguma observação da consulta</label
+              >
+              <textarea
+                class="appointment-form__input"
+                name="appointmentObservation"
+                id="appointmentObservation"
+              ></textarea>
+            </fieldset>
+          </div>
+
+          <button class="appointment-form__button">Botão</button>
+        </form>
       </main>
       <footer class="footer">
         <div class="container">
